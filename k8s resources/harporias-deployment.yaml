@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: harporias
+  namespace: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: harporias
+  template:
+    metadata:
+      labels:
+        app: harporias
+      annotations:
+    spec:
+      serviceAccountName: harporias-sa
+      containers:
+      - image: 127.0.0.1:5000/harporias
+        imagePullPolicy: Always
+        name: harporias
+        env:
+          - name: HA_PROXY_API_URL
+            value: "http://127.0.0.1"
+          - name: HA_PROXY_PORT
+            value: "3000"
+          - name: HA_PROXY_API_USERNAME
+            value: "admin"
+          - name: HA_PROXY_API_PASSWORD
+            value: "password"
+          - name: HA_PROXY_BACKENDS
+            value: "10.10.10.1,10.10.10.2,10.10.10.3"

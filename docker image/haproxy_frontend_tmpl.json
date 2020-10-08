@@ -1,0 +1,6 @@
+{
+  "name": "harporias",
+  "mode": "tcp",
+  "default_backend": "harporias",
+  "maxconn": 2000
+}

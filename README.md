@@ -32,7 +32,7 @@ COPY haproxy_backend_tmpl.json /tmp/haproxy_backend_tmpl.json
 COPY haproxy_frontend_bind_tmpl.json /tmp/haproxy_frontend_bind_tmpl.json
 COPY haproxy_frontend_tmpl.json /tmp/haproxy_frontend_tmpl.json
 RUN pip install kubernetes pytz requests
-CMD ["python","-u","readservice.py"]
+CMD ["python","-u","harporias.py"]
 ```
 
 The json files of the Docker image are templates of the configuration of backend, frontend, and a bind respectively. Feel free to modify it as your needs, according to the parameters of the Data Plane API. Check this: https://www.haproxy.com/documentation/dataplaneapi/latest/
@@ -143,7 +143,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-Is all, lets deploy harporias
+Its all, lets deploy harporias
 
 ## Deploy harporias
 

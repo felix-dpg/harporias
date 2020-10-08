@@ -1,0 +1,8 @@
+{
+ "address": "10.1.1.1",
+ "check": "enabled",
+ "max-connections": 500,
+ "name": "www",
+ "port": 8080,
+ "weight": 100
+}
