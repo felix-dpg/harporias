@@ -35,6 +35,8 @@ RUN pip install kubernetes pytz requests
 CMD ["python","-u","harporias.py"]
 ```
 
+...or use my image in Dockerhub: felixdpg/harporias:1.0.0
+
 The json files of the Docker image are templates of the configuration of backend, frontend, and a bind respectively. Feel free to modify it as your needs, according to the parameters of the Data Plane API. Check this: https://www.haproxy.com/documentation/dataplaneapi/latest/
 
 By default these templates will create the following configuration in the ha_proxy server:

@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccountName: harporias-sa
       containers:
-      - image: 127.0.0.1:5000/harporias
+      - image: felixdpg/harporias:1.0.0
         imagePullPolicy: Always
         name: harporias
         env:
