@@ -8,8 +8,6 @@ K8s controller to generate ha_proxy configurations dynamically
 
 A lot of users has ha_proxy as the loadbalancer in front of their kubernetes services. The configuration of the ha_proxy when you have a lot of k8s services could be a pain because you need to do it manually. That is when harporias could time save, generating the configuration of these services dynamically in the ha_proxy when services are created in the k8s cluster and are NodePort service type.
 
-harporias -- Well, Im a fan of Dark Souls saga, artorias is my prefered character.
-
 ----
 
 ## What you need to use harporias
