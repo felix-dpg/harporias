@@ -1,6 +1,6 @@
 # harporias
 
-K8s controller to generate ha_proxy configurations dinamically
+K8s controller to generate ha_proxy configurations dynamically
 
 <img src="https://github.com/felix-dpg/harporias/blob/main/logo.jpg" width="100">
 
